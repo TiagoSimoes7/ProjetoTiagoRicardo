@@ -21,6 +21,7 @@ public class CatchProblemForGA implements Problem<CatchIndividual> {
     public CatchIndividual getNewIndividual() {
         //TODO
         //TESTE PARA VER SE FAZ COMMIT
+        Cell cell;
         throw new UnsupportedOperationException("Não implementado ainda");
     }
 
