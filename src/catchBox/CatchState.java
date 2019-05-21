@@ -2,7 +2,7 @@ package catchBox;
 
 import agentSearch.Action;
 import agentSearch.State;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -50,7 +50,7 @@ public class CatchState extends State implements Cloneable {
         // TODO
         fireUpdatedEnvironment();
 
-        throw new NotImplementedException(); // delete after implementing
+        throw new UnsupportedOperationException("Não implementado ainda"); // delete after implementing
     }
 
     public boolean canMoveUp() {

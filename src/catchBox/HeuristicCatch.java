@@ -1,7 +1,7 @@
 package catchBox;
 
 import agentSearch.Heuristic;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+
 
 public class HeuristicCatch extends Heuristic<CatchProblemSearch, CatchState> {
 
