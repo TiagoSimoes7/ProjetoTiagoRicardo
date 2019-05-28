@@ -14,6 +14,7 @@ public class CatchProblemForGA implements Problem<CatchIndividual> {
             Cell cellCatch,
             Cell door) {
         //TODO
+        //Teste Repositorio
         throw new UnsupportedOperationException("Não implementado ainda");
     }
 
