@@ -1,6 +1,8 @@
 package ga;
 
 
+import java.util.Arrays;
+import java.util.LinkedList;
 
 public abstract class IntVectorIndividual<P extends Problem, I extends IntVectorIndividual> extends Individual<P, I> {
     //TODO this class might require the definition of additional methods and/or attributes
@@ -10,9 +12,23 @@ public abstract class IntVectorIndividual<P extends Problem, I extends IntVector
     public IntVectorIndividual(P problem, int size) {
         super(problem);
         genome = new int[size];
+        boolean repetido = false;
 
-        //TODO
-        throw new UnsupportedOperationException("Não implementado ainda");
+        int r;
+        for (int i = 0; i <size ; i++) {
+           do{
+                repetido = false;
+                r= GeneticAlgorithm.random.nextInt(size)+1;
+                for (int j = 0; j <size ; j++) {
+                    if (genome[j] == r){
+                        repetido = true;
+                    }
+                }
+            }while (repetido);
+
+            genome[i] = r;
+        }
+        System.out.println(Arrays.toString(genome));
       }
 
     public IntVectorIndividual(IntVectorIndividual<P, I> original) {

@@ -2,6 +2,8 @@ package catchBox;
 
 import ga.IntVectorIndividual;
 
+import java.util.LinkedList;
+
 
 public class CatchIndividual extends IntVectorIndividual<CatchProblemForGA, CatchIndividual> {
 
@@ -15,8 +17,43 @@ public class CatchIndividual extends IntVectorIndividual<CatchProblemForGA, Catc
 
     @Override
     public double computeFitness() {
-        //TODO
-        throw new UnsupportedOperationException("Não implementado ainda");
+
+        fitness = 0;
+
+        LinkedList<Pair> pairs = problem.getPairs();
+
+        //do catch a primeira caixa
+        Cell cell1 = problem.getCellCatch();
+        Cell cell2 = problem.getCellsBoxes().get(genome[0]-1);
+
+        for (Pair p: pairs) {
+            if(p.getCell1().equals(cell1) && p.getCell2().equals(cell2)){
+                fitness += p.getValue();
+            }
+        }
+
+        //entre as caixas
+        for (int i = 0; i < genome.length-1; i++){
+            cell1 = problem.getCellsBoxes().get(genome[i]-1);
+            cell2 = problem.getCellsBoxes().get(genome[i+1]-1);
+
+            for (Pair p: pairs) {
+                if(p.getCell1().equals(cell1) && p.getCell2().equals(cell2) || p.getCell1().equals(cell2) && p.getCell2().equals(cell1)){
+                    fitness += p.getValue();
+                }
+            }
+        }
+
+        //da ultima caixa a porta
+        cell1 = problem.getCellsBoxes().get(genome[genome.length-1] -1);
+        cell2 = problem.getDoor();
+        for (Pair p: pairs) {
+            if(p.getCell1().equals(cell1) && p.getCell2().equals(cell2)){
+                fitness += p.getValue();
+            }
+        }
+
+        return fitness;
     }
 
     public int[] getGenome() {
@@ -42,7 +79,12 @@ public class CatchIndividual extends IntVectorIndividual<CatchProblemForGA, Catc
      */
     @Override
     public int compareTo(CatchIndividual i) {
-        return (this.fitness == i.getFitness()) ? 0 : (this.fitness < i.getFitness()) ? 1 : -1;
+        if(this.fitness > i.fitness){
+            return 1;
+        }else if (this.fitness < i.fitness){
+            return -1;
+        }
+        return 0;
     }
 
     @Override
