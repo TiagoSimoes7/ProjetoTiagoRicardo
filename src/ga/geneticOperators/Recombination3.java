@@ -17,19 +17,31 @@ public class Recombination3<I extends IntVectorIndividual, P extends Problem<I>>
     public void recombine(I ind1, I ind2) {
         int cut1 = GeneticAlgorithm.random.nextInt(ind1.getNumGenes());
         int cut2 = GeneticAlgorithm.random.nextInt(ind1.getNumGenes());
+        int cut3 = GeneticAlgorithm.random.nextInt(ind1.getNumGenes());
         if (cut1 > cut2) {
             int aux = cut1;
             cut1 = cut2;
             cut2 = aux;
         }
-
         for (int i = cut1; i < cut2; i++) {
-            ind1.swapGenes(ind2, i);        }
+            ind1.swapGenes(ind2, i);
+        }
+
+        if (cut2 > cut3){
+            int aux = cut2;
+            cut2 = cut3;
+            cut3 = aux;
+        }
+
+        for (int i = cut2; i < cut3; i++) {
+            ind1.swapGenes(ind2, i);
+        }
+
     }
 
     @Override
     public String toString(){
 
-        return "Two cuts recombination (" + probability + ")";
+        return "Three cuts recombination (" + probability + ")";
     }    
 }
