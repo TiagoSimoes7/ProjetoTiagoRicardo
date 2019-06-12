@@ -1,8 +1,7 @@
 package catchBox;
 
-import com.sun.corba.se.impl.corba.EnvironmentImpl;
+
 import ga.Problem;
-import org.omg.CORBA.Environment;
 
 
 import java.util.LinkedList;
