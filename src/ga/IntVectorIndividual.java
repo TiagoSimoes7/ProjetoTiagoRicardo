@@ -2,7 +2,6 @@ package ga;
 
 
 import java.util.Arrays;
-import java.util.LinkedList;
 
 public abstract class IntVectorIndividual<P extends Problem, I extends IntVectorIndividual> extends Individual<P, I> {
     //TODO this class might require the definition of additional methods and/or attributes
@@ -12,7 +11,7 @@ public abstract class IntVectorIndividual<P extends Problem, I extends IntVector
     public IntVectorIndividual(P problem, int size) {
         super(problem);
         genome = new int[size];
-        boolean repetido = false;
+        boolean repetido;
 
         int r;
         for (int i = 0; i <size ; i++) {
