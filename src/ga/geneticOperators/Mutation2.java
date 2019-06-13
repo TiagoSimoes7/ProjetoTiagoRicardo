@@ -13,7 +13,7 @@ public class Mutation2<I extends IntVectorIndividual, P extends Problem<I>> exte
 
     @Override
     public void mutate(I ind) {
-         int pos1 = GeneticAlgorithm.random.nextInt(ind.getNumGenes()/2);
+        int pos1 = GeneticAlgorithm.random.nextInt(ind.getNumGenes()/2);
         int pos2;
         int pos3;
         int pos4;
@@ -39,7 +39,6 @@ public class Mutation2<I extends IntVectorIndividual, P extends Problem<I>> exte
 
     @Override
     public String toString() {
-        //TODO
-        throw new UnsupportedOperationException("Não implementado ainda");
+        return "Inversion mutation (" + probability + ")";
     }
 }

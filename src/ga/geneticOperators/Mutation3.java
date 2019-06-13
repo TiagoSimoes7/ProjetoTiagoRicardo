@@ -21,12 +21,10 @@ public class Mutation3<I extends IntVectorIndividual, P extends Problem<I>> exte
         int aux=ind.getGene(pos1);
         ind.setGene(pos1,ind.getGene(pos2));
         ind.setGene(pos2,aux);
-        throw new UnsupportedOperationException("Não implementado ainda");
     }
 
     @Override
     public String toString() {
-        //TODO
-        throw new UnsupportedOperationException("Não implementado ainda");
+        return "Swap mutation (" + probability + ")";
     }
 }
