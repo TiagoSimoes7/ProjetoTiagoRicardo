@@ -29,6 +29,7 @@ public class CatchIndividual extends IntVectorIndividual<CatchProblemForGA, Catc
         for (Pair p: pairs) {
             if(p.getCell1().equals(cell1) && p.getCell2().equals(cell2)){
                 fitness += p.getValue();
+                break;
             }
         }
 
@@ -40,6 +41,7 @@ public class CatchIndividual extends IntVectorIndividual<CatchProblemForGA, Catc
             for (Pair p: pairs) {
                 if(p.getCell1().equals(cell1) && p.getCell2().equals(cell2) || p.getCell1().equals(cell2) && p.getCell2().equals(cell1)){
                     fitness += p.getValue();
+                    break;
                 }
             }
         }
@@ -50,6 +52,7 @@ public class CatchIndividual extends IntVectorIndividual<CatchProblemForGA, Catc
         for (Pair p: pairs) {
             if(p.getCell1().equals(cell1) && p.getCell2().equals(cell2)){
                 fitness += p.getValue();
+                break;
             }
         }
 

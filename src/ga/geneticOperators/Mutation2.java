@@ -13,28 +13,23 @@ public class Mutation2<I extends IntVectorIndividual, P extends Problem<I>> exte
 
     @Override
     public void mutate(I ind) {
-        int pos1 = GeneticAlgorithm.random.nextInt(ind.getNumGenes()/2);
-        int pos2;
-        int pos3;
-        int pos4;
+        int cut1 = GeneticAlgorithm.random.nextInt(ind.getNumGenes()/2);
+        int cut2;
         do {
-            pos2 = GeneticAlgorithm.random.nextInt(ind.getNumGenes());
-        }while (pos1==pos2);
-        do {
-            pos3 = GeneticAlgorithm.random.nextInt(ind.getNumGenes());
-        }while (pos3==pos2 || pos3==pos1);
-        do {
-            pos4 = GeneticAlgorithm.random.nextInt(ind.getNumGenes());
-        }while (pos4==pos2 || pos4==pos3 || pos4==pos1);
-        int aux1 =ind.getGene(pos1);
-        int aux2 =ind.getGene(pos2);
-        int aux3 =ind.getGene(pos3);
-        int aux4 =ind.getGene(pos4);
+            cut2 = GeneticAlgorithm.random.nextInt(ind.getNumGenes());
+        }while (cut1==cut2);
 
-        ind.setGene(pos1,aux4);
-        ind.setGene(pos2,aux3);
-        ind.setGene(pos3,aux2);
-        ind.setGene(pos4,aux1);
+        int aux1;
+        int aux2;
+
+        for (int i = cut1, j = cut2; i <= (cut2-cut1)/2 + cut1; i++, j--){
+            aux1 = ind.getGene(i);
+            aux2 = ind.getGene(j);
+
+            ind.setGene(i,aux2);
+            ind.setGene(j,aux1);
+        }
+
     }
 
     @Override

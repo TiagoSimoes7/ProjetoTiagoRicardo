@@ -27,8 +27,12 @@ public abstract class IntVectorIndividual<P extends Problem, I extends IntVector
 
             genome[i] = r;
         }
-        System.out.println(Arrays.toString(genome));
+        //System.out.println(Arrays.toString(genome));
       }
+
+    public int[] getGenome() {
+        return genome;
+    }
 
     public IntVectorIndividual(IntVectorIndividual<P, I> original) {
         super(original);

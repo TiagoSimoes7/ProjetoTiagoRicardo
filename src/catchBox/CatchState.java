@@ -14,6 +14,7 @@ public class CatchState extends State implements Cloneable {
     protected int[][] matrix;
     private int lineCatch;
     private int columnCatch;
+    private int steps;
 
     public CatchState(int[][] matrix) {
         this.matrix = new int[matrix.length][matrix.length];
@@ -21,7 +22,7 @@ public class CatchState extends State implements Cloneable {
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix.length; j++) {
                 this.matrix[i][j] = matrix[i][j];
-                if (this.matrix[i][j] == 0) {
+                if (this.matrix[i][j] == Properties.CATCH) {
                     lineCatch = i;
                     columnCatch = j;
                 }
@@ -47,10 +48,9 @@ public class CatchState extends State implements Cloneable {
 
     public void executeAction(Action action) {
         action.execute(this);
-        // TODO
+        steps++;
         fireUpdatedEnvironment();
 
-        throw new UnsupportedOperationException("Não implementado ainda"); // delete after implementing
     }
 
     public boolean canMoveUp() {
@@ -90,9 +90,16 @@ public class CatchState extends State implements Cloneable {
     }
 
     public int getNumBox() {    //num boxes apanhadas
-        //TODO
-        //return numBoxes;
-        return 0;
+        int numBoxes = 0;
+
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix.length; j++) {
+                if (this.matrix[i][j] == Properties.BOX) {
+                    numBoxes++;
+                }
+            }
+        }
+        return numBoxes;
     }
 
     public void setCellCatch(int line, int column) {
@@ -107,8 +114,8 @@ public class CatchState extends State implements Cloneable {
     }
 
     public int getSteps() {
-        //TODO
-        return 0; //se estiver a dar problemas
+
+        return steps; //se estiver a dar problemas
     }
 
     public int getSize() {

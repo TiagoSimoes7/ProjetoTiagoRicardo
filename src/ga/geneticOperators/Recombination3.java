@@ -7,7 +7,11 @@ import ga.Problem;
 
 public class Recombination3<I extends IntVectorIndividual, P extends Problem<I>> extends Recombination<I, P> {
 
-    //TODO this class might require the definition of additional methods and/or attributes
+    private int[] child1, child2;
+
+    private int cut1;
+    private int cut2;
+    private int cut3;
 
     public Recombination3(double probability) {
         super(probability);
@@ -15,28 +19,57 @@ public class Recombination3<I extends IntVectorIndividual, P extends Problem<I>>
 
     @Override
     public void recombine(I ind1, I ind2) {
-        int cut1 = GeneticAlgorithm.random.nextInt(ind1.getNumGenes());
-        int cut2 = GeneticAlgorithm.random.nextInt(ind1.getNumGenes());
-        int cut3 = GeneticAlgorithm.random.nextInt(ind1.getNumGenes());
+        child1 = new int[ind1.getNumGenes()];
+        child2 = new int[ind2.getNumGenes()];
+        cut1 = GeneticAlgorithm.random.nextInt(ind1.getNumGenes());
+        do {
+            cut2 = GeneticAlgorithm.random.nextInt(ind1.getNumGenes());
+        } while (cut1 == cut2);
+        do {
+            cut3 = GeneticAlgorithm.random.nextInt(ind1.getNumGenes());
+        } while (cut3 == cut2 || cut3 == cut1);
         if (cut1 > cut2) {
             int aux = cut1;
             cut1 = cut2;
             cut2 = aux;
         }
-        for (int i = cut1; i < cut2; i++) {
-            ind1.swapGenes(ind2, i);
-        }
-
-        if (cut2 > cut3){
+        if (cut2 > cut3) {
             int aux = cut2;
             cut2 = cut3;
             cut3 = aux;
         }
 
-        for (int i = cut2; i < cut3; i++) {
-            ind1.swapGenes(ind2, i);
+        for (int i = cut1; i <= cut2; i++){ //primeiro parte central dos childs
+            child1[i] = ind1.getGene(i);
+            child2[i] = ind2.getGene(i);
+        }
+        for (int i = cut2; i <= cut3; i++){ //segunda parte central dos childs
+            child1[i] = ind2.getGene(i);
+            child2[i] = ind1.getGene(i);
         }
 
+        preencherChild(ind1, child1);
+        preencherChild(ind2, child2);
+    }
+
+
+    private void preencherChild(I ind, int[] child) {
+
+        //Preencher resto do child
+        for (int i = 0; i < ind.getNumGenes(); i++) { //percorrer todos os genes do parent
+            if (ind.getGene(i) > 0) {
+                for (int j = 0; j < child.length; j++) { //para cada gene do parent percorrer os genes do child
+
+                    if (ind.getGene(i) == child[j]){ //verificar se ja existe no child
+                        break;
+                    }
+                    if (child[j] == 0) {    //se ainda estiver fazio e nao existir
+                        child[j] = ind.getGene(i);
+                        break;
+                    }
+                }
+            }
+        }
     }
 
     @Override
