@@ -50,6 +50,9 @@ public class Recombination3<I extends IntVectorIndividual, P extends Problem<I>>
 
         preencherChild(ind1, child1);
         preencherChild(ind2, child2);
+
+        System.arraycopy(child1, 0, ind1.getGenome(), 0, child1.length);
+        System.arraycopy(child2, 0, ind2.getGenome(), 0, child2.length);
     }
 
 

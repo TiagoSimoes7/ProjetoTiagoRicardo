@@ -2,47 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2b70e5e-1b60-4872-a6a3-ca09f1e66e1b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjCatch/agentSearch/Agent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjCatch/agentSearch/Agent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjCatch/agentSearch/Problem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjCatch/agentSearch/Problem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjCatch/agentSearch/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjCatch/agentSearch/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjCatch/catchBox/CatchAgentSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjCatch/catchBox/CatchAgentSearch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjCatch/catchBox/CatchExperimentsFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjCatch/catchBox/CatchExperimentsFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjCatch/catchBox/CatchIndividual.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjCatch/catchBox/CatchIndividual.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjCatch/catchBox/CatchProblemSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjCatch/catchBox/CatchProblemSearch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjCatch/catchBox/CatchState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjCatch/catchBox/CatchState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjCatch/catchBox/Cell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjCatch/catchBox/Cell.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjCatch/experiments/Experiment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjCatch/experiments/Experiment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjCatch/experiments/ExperimentsFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjCatch/experiments/ExperimentsFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjCatch/ga/GeneticAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjCatch/ga/GeneticAlgorithm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjCatch/ga/IntVectorIndividual.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjCatch/ga/IntVectorIndividual.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjCatch/ga/Population.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjCatch/ga/Population.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjCatch/ga/geneticOperators/Mutation2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjCatch/ga/geneticOperators/Mutation2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjCatch/ga/geneticOperators/Recombination2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjCatch/ga/geneticOperators/Recombination2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjCatch/ga/selectionMethods/Tournament.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjCatch/ga/selectionMethods/Tournament.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjCatch/gui/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjCatch/gui/Main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjCatch/gui/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjCatch/gui/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjCatch/gui/MainFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjCatch/gui/MainFrame$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjCatch/gui/MainFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjCatch/gui/MainFrame$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjCatch/gui/MainFrame$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjCatch/gui/MainFrame$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjCatch/gui/MainFrame$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjCatch/gui/MainFrame$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjCatch/gui/MainFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjCatch/gui/MainFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjCatch/gui/PanelAtributesValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjCatch/gui/PanelAtributesValue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjCatch/gui/PanelParameters.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjCatch/gui/PanelParameters.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjCatch/gui/PanelSimulation$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjCatch/gui/PanelSimulation$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjCatch/gui/PanelSimulation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjCatch/gui/PanelSimulation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjCatch/search/AStarSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjCatch/search/AStarSearch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjCatch/search/GraphSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjCatch/search/GraphSearch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjCatch/search/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjCatch/search/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjCatch/statisticsGA/StatisticBestAverage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjCatch/statisticsGA/StatisticBestAverage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjCatch/statisticsGA/StatisticBestInRun.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjCatch/statisticsGA/StatisticBestInRun.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjCatch/utils/FileOperations.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjCatch/utils/FileOperations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjCatch/utils/Maths.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjCatch/utils/Maths.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/catchBox/CatchIndividual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/catchBox/CatchIndividual.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/catchBox/CatchState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/catchBox/CatchState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ga/IntVectorIndividual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ga/IntVectorIndividual.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ga/geneticOperators/Mutation2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ga/geneticOperators/Mutation2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ga/geneticOperators/Recombination2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ga/geneticOperators/Recombination2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ga/geneticOperators/Recombination3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ga/geneticOperators/Recombination3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/PanelParameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/PanelParameters.java" afterDir="false" />
@@ -56,11 +15,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/gui/PanelParameters.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="20" column="53" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+            <state relative-caret-position="206">
+              <caret line="153" lean-forward="true" selection-start-line="153" selection-end-line="153" />
+              <folding>
+                <element signature="e#5608#5609#0" expanded="true" />
+                <element signature="e#5646#5647#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -74,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ga/geneticOperators/Recombination2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
-              <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+            <state relative-caret-position="53">
+              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
             </state>
           </provider>
         </entry>
@@ -86,8 +49,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ga/geneticOperators/Recombination3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="624">
-              <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+            <state relative-caret-position="748">
+              <caret line="54" column="72" selection-start-line="54" selection-start-column="72" selection-end-line="54" selection-end-column="72" />
             </state>
           </provider>
         </entry>
@@ -95,8 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ga/geneticOperators/Mutation2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+            <state relative-caret-position="369">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="e#851#852#0" expanded="true" />
                 <element signature="e#916#917#0" expanded="true" />
@@ -118,25 +81,24 @@
         <option value="$PROJECT_DIR$/src/catchBox/CatchIndividual.java" />
         <option value="$PROJECT_DIR$/src/ga/IntVectorIndividual.java" />
         <option value="$PROJECT_DIR$/src/catchBox/CatchState.java" />
-        <option value="$PROJECT_DIR$/src/gui/PanelParameters.java" />
         <option value="$PROJECT_DIR$/src/ga/geneticOperators/Mutation2.java" />
-        <option value="$PROJECT_DIR$/src/ga/geneticOperators/Recombination2.java" />
+        <option value="$PROJECT_DIR$/src/gui/PanelParameters.java" />
         <option value="$PROJECT_DIR$/src/ga/geneticOperators/Recombination3.java" />
+        <option value="$PROJECT_DIR$/src/ga/geneticOperators/Recombination2.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
-    <option name="width" value="1940" />
-    <option name="height" value="1100" />
+    <option name="width" value="1460" />
+    <option name="height" value="920" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -210,6 +172,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -272,7 +235,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22281879" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2261745" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -440,13 +403,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/PanelParameters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="20" column="53" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ga/geneticOperators/RecombinationPartialMapped.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -456,8 +412,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ga/geneticOperators/Mutation2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+        <state relative-caret-position="369">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="e#851#852#0" expanded="true" />
             <element signature="e#916#917#0" expanded="true" />
@@ -467,15 +423,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ga/geneticOperators/Recombination3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+        <state relative-caret-position="748">
+          <caret line="54" column="72" selection-start-line="54" selection-start-column="72" selection-end-line="54" selection-end-column="72" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ga/geneticOperators/Recombination2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+        <state relative-caret-position="53">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/PanelParameters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="153" lean-forward="true" selection-start-line="153" selection-end-line="153" />
+          <folding>
+            <element signature="e#5608#5609#0" expanded="true" />
+            <element signature="e#5646#5647#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

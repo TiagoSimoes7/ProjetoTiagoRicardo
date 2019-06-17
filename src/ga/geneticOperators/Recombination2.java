@@ -42,11 +42,8 @@ public class Recombination2<I extends IntVectorIndividual, P extends Problem<I>>
         preencherChild(ind2, child2);
 
 
-        //System.arraycopy(child1, 0, ind1.getGenome(), 0, child1.length);
-        //System.arraycopy(child2, 0, ind2.getGenome(), 0, child2.length);
-
-        //System.out.println(Arrays.toString(ind1.getGenome()));
-        //System.out.println(Arrays.toString(ind2.getGenome()));
+        System.arraycopy(child1, 0, ind1.getGenome(), 0, child1.length);
+        System.arraycopy(child2, 0, ind2.getGenome(), 0, child2.length);
 
     }
 
