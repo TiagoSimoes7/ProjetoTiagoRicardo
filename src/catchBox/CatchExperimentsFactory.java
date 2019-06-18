@@ -52,11 +52,11 @@ public class CatchExperimentsFactory extends ExperimentsFactory {
             case "pmx":
                 recombination = new RecombinationPartialMapped<>(recombinationProbability);
                 break;
-            case "TODO1": //TODO
-                recombination = new Recombination3<>(recombinationProbability);
-                break;
-            case "TODO2": //TODO
+            case "crossover":
                 recombination = new Recombination2<>(recombinationProbability);
+                break;
+            case "three-cut":
+                recombination = new Recombination3<>(recombinationProbability);
                 break;
         }
 
@@ -66,11 +66,11 @@ public class CatchExperimentsFactory extends ExperimentsFactory {
             case "insert":
                 mutation = new MutationInsert<>(mutationProbability);
                 break;
-            case "TODO1": //TODO
-                mutation = new Mutation3<>(mutationProbability);
-                break;
-            case "TODO2": //TODO
+            case "inversion": //TODO
                 mutation = new Mutation2<>(mutationProbability);
+                break;
+            case "swap": //TODO
+                mutation = new Mutation3<>(mutationProbability);
                 break;
         }
 

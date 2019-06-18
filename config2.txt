@@ -2,7 +2,7 @@ Runs: 30
 
 Population size: 50, 100
 
-Max generations: 100, 500, 1000
+Max generations: 100, 300
 
 //--------------------------------
 
@@ -12,13 +12,13 @@ Tournament size: 4
 
 //--------------------------------
 
-Recombination: pmx, crossover, 
+Recombination: pmx
 
 Recombination probability: 0.7, 0.8
 
 //--------------------------------
 
-Mutation: insert, inversion, swap
+Mutation: insert
 
 Mutation probability: 0.3, 0.5
 
